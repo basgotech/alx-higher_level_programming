@@ -1,10 +1,5 @@
 #!/bin/bash
 
-if [ -z "$PYCODE" ]; then
-    echo "Error: PYCODE environment variable not set."
-    exit 1
-fi
-
 TEMP_F=$(mktemp)
 echo "$PYCODE" > "$TEMP_F"
 

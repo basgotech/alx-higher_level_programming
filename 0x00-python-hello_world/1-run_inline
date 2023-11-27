@@ -1,8 +1,2 @@
 #!/bin/bash
-
-TEMP_F=$(mktemp)
-echo "$PYCODE" > "$TEMP_F"
-
-python3 "$TEMP_F"
-
-rm "$TEMP_F"
+python3 -c "$PYCODE"

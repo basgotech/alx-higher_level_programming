@@ -1,13 +1,15 @@
-from sys import argv
+#!/usr/bin/python3
 
 if __name__ == "__main__":
-    na = len(argv) - 1
+    
+    import sys
 
-    if na == 0:
+    argc = len(sys.argv) - 1
+    if argc == 0:
         print("0 arguments.")
+    elif argc == 1:
+        print("1 argument:")
     else:
-        args = "s" if na > 1 else ""
-        print("{} argument{}:".format(na, args, "s" if na > 1 else "."))
-
-        for i, arg in enumerate(argv[1:], start=1):
-            print("{}: {}".format(i, arg))
+        print("{} arguments:".format(argc))
+    for b in range(argc):
+        print("{}: {}".format(b + 1, sys.argv[b + 1]))

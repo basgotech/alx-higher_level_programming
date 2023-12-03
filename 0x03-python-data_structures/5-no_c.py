@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
 def no_c(my_string):
-    str_list = list(my_string)
-    for i in range(len(str_list)):
-     if str_list[i] == 'c' or str_list[i] == 'C':
-        str_list[i] = ''
-    result_str = ''.join(str_list)
+    fil_c = [char for char in my_string if char.lower() not in ('c', 'C')]
+    result_str = ''.join(fil_c)
     return result_str

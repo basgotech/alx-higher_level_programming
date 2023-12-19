@@ -10,12 +10,8 @@ class Square:
         """
         Initialize a square.
 
-        Parameters:
+        Args:
         - size (int): Optional size of the square (default is 0).
-
-        Raises:
-        - TypeError: If size is not an integer.
-        - ValueError: If size is less than 0.
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")

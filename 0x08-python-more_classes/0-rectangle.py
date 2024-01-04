@@ -1,6 +1,13 @@
 #!/usr/bin/python3
 """ empty Rectangle Class """
-
 class Rectangle:
-    """ All rectangle calculation here """
+    """
+    A class to represent a rectangle.
+
+    Attributes:
+        No attributes are defined yet.
+
+    Methods:
+        No methods are defined yet.
+    """
     pass

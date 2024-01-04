@@ -4,4 +4,3 @@
 class Rectangle:
     """ All rectangle calculation here """
     pass
-

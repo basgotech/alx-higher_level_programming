@@ -8,14 +8,6 @@ class MyList(list):
         super().__init__()
 
     def print_sorted(self):
-        """
-        Print the list in ascending sorted order.
-
-        This method sorts the elements of the list in ascending order
-        and then prints the sorted list.
-
-        Returns:
-        - None
-        """
+        """Print the list in ascending sorted order."""
         sorted_list = sorted(self)
         print(sorted_list)

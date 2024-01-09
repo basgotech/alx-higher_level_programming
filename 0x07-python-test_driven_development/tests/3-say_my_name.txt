@@ -1,23 +1,23 @@
 """
-Module to demonstrate the say_my_name function.
+>>> say_my_name("John", "Smith")
+My name is John Smith
 
-Usage:
-- say_my_name("John", "Smith")
-- say_my_name("Walter", "White")
-- say_my_name("Bob")
-- say_my_name(12, "White")  # Raises a TypeError
+>>> say_my_name("Walter")
+My name is Walter
 
-Example:
-    >>> say_my_name("John", "Smith")
-    My name is John Smith
+>>> say_my_name("", "White")
+My name is White
 
-    >>> say_my_name("Walter", "White")
-    My name is Walter White
+>>> say_my_name(12, "White")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+    say_my_name(12, "White")
+TypeError: first_name must be a string
 
-    >>> say_my_name("Bob")
-    My name is Bob
-
-    >>> say_my_name(12, "White")
-    Traceback (most recent call last):
-    TypeError: first_name must be a string
+>>> say_my_name("Mary", "Jones", "Doe")
+My name is Mary Jones
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+    say_my_name("Mary", "Jones", "Doe")
+TypeError: say_my_name() takes 2 positional arguments but 3 were given
 """

@@ -1,0 +1,32 @@
+# Test Case 1: Basic addition with integers
+result = add_integer(5, 5)
+print(result)  # Output: 10
+
+# Test Case 2: Basic addition with floats
+result = add_integer(5.5, 5.2)
+print(result)  # Output: 10
+
+# Test Case 3: Addition with one integer and one float (casting to integers)
+result = add_integer(7, 4.9)
+print(result)  # Output: 11
+
+# Test Case 4: Addition with both values as floats (casting to integers)
+result = add_integer(2.5, 3.7)
+print(result)  # Output: 6
+
+# Test Case 5: Default value for b
+result = add_integer(6)
+print(result)  # Output: 104 (6 + 98)
+
+# Test Case 6: Non-integer or non-float value for a (raises TypeError)
+try:
+    add_integer("abc", 100)
+except TypeError as e:
+    print(e)  # Output: a must be an integer
+
+# Test Case 7: Non-integer or non-float value for b (raises TypeError)
+try:
+    add_integer(5, "xyz")
+except TypeError as e:
+    print(e)  # Output: b must be an integer
+

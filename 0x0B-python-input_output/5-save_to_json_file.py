@@ -1,16 +1,13 @@
 #!/usr/bin/python3
-"""
-from_json_string module
-"""
+"""save_to_json_file module"""
 
-def from_json_string(my_str):
-    """Returns an object represented by a JSON string.
+def save_to_json_file(my_obj, filename):
+    """text file using JSON representation.
 
     Args:
-        my_str (str): The JSON string.
-
-    Returns:
-        object: The Python data the JSON string.
+        my_obj: The object to be written to the file.
+        filename (str): The name of the file.
     """
     import json
-    return json.loads(my_str)
+    with open(filename, 'w', encoding='utf-8') as file:
+        json.dump(my_obj, file)

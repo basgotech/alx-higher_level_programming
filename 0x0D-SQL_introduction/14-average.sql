@@ -4,4 +4,4 @@
 -- The result is assigned the column name 'average'.
 -- Note: Replace 'hbtn_0c_0' with the actual name of your database.
 
-SELECT AVG(score) AS average FROM hbtn_0c_0.second_table;
+SELECT AVG(score) AS average FROM second_table;

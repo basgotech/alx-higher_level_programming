@@ -1,5 +1,4 @@
 -- Specify the database name
-USE your_database;
 
 -- Create the force_name table if it does not exist
 CREATE TABLE IF NOT EXISTS force_name (

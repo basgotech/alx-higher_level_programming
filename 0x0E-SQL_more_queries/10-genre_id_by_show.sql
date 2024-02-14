@@ -1,8 +1,8 @@
 -- Specify the database name as an argument when running the script
 
 -- List all shows with at least one linked genre
-SELECT tv_shows.title, tv_show_genres.genre_id
-FROM tv_shows
-JOIN tv_show_genres ON tv_shows.id = tv_show_genres.tv_show_id
-WHERE tv_show_genres.genre_id IS NOT NULL
-ORDER BY tv_shows.title ASC, tv_show_genres.genre_id ASC;
+SELECT s.`title`, g.`genre_id`
+  FROM `tv_shows` AS s
+        INNER JOIN `tv_show_genres` AS g
+	ON s.`id` = g.`show_id`
+ ORDER BY s.`title`, g.`genre_id`;

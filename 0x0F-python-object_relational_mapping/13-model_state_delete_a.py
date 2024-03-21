@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" Script to delete State objects with names containing the letter 'a' from the db.
+"""
+Script to delete State objects with names 
+containing the letter 'a' from the db.
 """
 import sys
 from model_state import Base, State

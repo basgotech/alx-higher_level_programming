@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ 
-Script to list all State objects and their corresponding City objects.
+Script to list all State objects and 
+their corresponding City objects.
 """
 
 import sys
@@ -23,8 +24,8 @@ if __name__ == "__main__":
     session = Session()
     
     # Query all State objects ordered by their ID
-    for instance in session.query(State).order_by(State.id):
+    for i in session.query(State).order_by(State.id):
         # Print each City object associated with the State
-        for city_ins in instance.cities:
-            print(city_ins.id, city_ins.name, sep=": ", end="")
-            print(" -> " + instance.name)
+        for ci in i.cities:
+            print(ci.id, ci.name, sep=": ", end="")
+            print(" -> " + i.name)

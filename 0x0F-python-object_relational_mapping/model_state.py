@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """ Script to generate SQL comment. """
 
-from sqlalchemy import Column, Integer, String, MetaData
+from sqlalchemy import String, MetaData, Column, Integer
 from sqlalchemy.ext.declarative import declarative_base
 
-mymetadata = MetaData()
-Base = declarative_base(metadata=mymetadata)
+mdata = MetaData()
+dbase = declarative_base(metadata=mdata)
 
 
-class State(Base):
+class State(dbase):
     """
     This class represents the 'states' table in the database.
     """

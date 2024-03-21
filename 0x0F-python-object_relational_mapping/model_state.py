@@ -5,10 +5,10 @@ from sqlalchemy import String, MetaData, Column, Integer
 from sqlalchemy.ext.declarative import declarative_base
 
 mdata = MetaData()
-dbase = declarative_base(metadata=mdata)
+Base = declarative_base(metadata=mdata)
 
 
-class State(dbase):
+class State(Base):
     """
     This class represents the 'states' table in the database.
     """

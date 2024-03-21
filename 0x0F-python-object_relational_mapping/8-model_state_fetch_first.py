@@ -15,7 +15,7 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
 
     """ Create session """
-    Session = sessionmaker(bind=c_eng)
+    Session = sessionmaker(bind=engine)
     session = Session()
 
     """ Query the first State object """

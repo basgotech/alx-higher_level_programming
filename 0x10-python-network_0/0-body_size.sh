@@ -1,4 +1,3 @@
 #!/bin/bash
-
-# Check if a URL is provided as argument
+# Get the byte size of the HTTP.
 curl -s "$1" | wc -c

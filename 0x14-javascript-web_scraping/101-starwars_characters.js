@@ -1,6 +1,6 @@
 #!/usr/bin/node
 // all characters of a Star Wars movie:
-const req = require('request');
+const request = require('request');
 const id = process.argv[2];
 const url = `https://swapi-api.alx-tools.com/api/films/${id}`;
 
@@ -12,7 +12,7 @@ request.get(url, (error, response, body) => {
     const characters = content.characters;
     
     for (const character of characters) {
-      req.get(character, (error, response, body) => {
+      request.get(character, (error, response, body) => {
         if (error) {
           console.log(error);
         } else {
